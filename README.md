@@ -1,16 +1,17 @@
-# React + Vite
+# Pizzería Mamma Mía! - Hito 3
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web desarrollada en **React** y JavaScript puro, centrada en la gestión de componentes reutilizables, renderizado dinámico de arreglos, manejo de estados con hooks (`useState`) y diseño CSS centralizado sin frameworks externos.
 
-Currently, two official plugins are available:
+## 🚀 Características del Hito 3
+- **Renderizado del Carrito (`<Cart />`):** Recorrido dinámico del arreglo `pizzaCart` para mostrar los productos seleccionados con sus respectivas imágenes, nombres y precios formateados en moneda chilena (`CLP`)[cite: 14].
+- **Interactividad en el Carrito:** 
+  - Botones de incremento (`+`) y decremento (`-`) funcionales que actualizan la cantidad de unidades en tiempo real[cite: 14].
+  - Eliminación automática del producto del carrito si su cantidad llega a cero.
+- **Cálculo Dinámico del Total:** Suma automática del costo total de los productos según las cantidades actuales en el pedido[cite: 14].
+- **Diseño Responsivo:** Estilos CSS optimizados para evitar desbordamientos, controlar tamaños de imágenes y mantener una estructura fluida de ancho completo con pie de página fijo.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tecnologías Utilizadas
+- **React.js** (con Hooks: `useState`)
+- **JavaScript (ES6+)**
+- **HTML5 / CSS3** (Diseño centralizado y flexible)
+- **Vite** (Entorno de desarrollo rápido)
