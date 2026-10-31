@@ -1,9 +1,6 @@
 import React from 'react';
 
-const Navbar = () => {
-  const total = 25000;
-  const token = false;
-
+const Navbar = ({ total = 25000, token = false }) => {
   return (
     <nav className="navbar">
       <div className="navbar-left">
@@ -23,9 +20,11 @@ const Navbar = () => {
           )}
         </div>
       </div>
-      <button className="nav-btn btn-total">
-        🛒 Total: ${total.toLocaleString('es-CL')}
-      </button>
+      <div className="navbar-right">
+        <button className="nav-btn btn-total">
+          🛒 Total: ${total.toLocaleString('es-CL')}
+        </button>
+      </div>
     </nav>
   );
 };
